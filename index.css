@@ -9,35 +9,62 @@
    padding: 0;
    box-sizing: border-box;
 }
-
-header {
+@font-face {
+   font-family: 'MyWebFont';
+   src: url('./fonts/CascadiaCodeItalic.woff2') format('woff2')
+}
+@font-face {
+   font-family: 'MyWebFont2';
+   src: url('./fonts/CascadiaCodeItalic.woff2') format('woff2')
+}
+body{
+   /*font-family: 'Poppins', sans-serif;*/
+   font-family: 'Gentium Book Plus', serif;
+}
+/*header {
+   font-family: MyWebFont2;
    font-size: 1.5rem;
    width: 100%;
    color: cornsilk;
    padding: 1.5rem;
  background-color:rgb(92, 94, 112);
-   /*background-color: hsl(12, 90%, 58%);*/
-}
+   background-color: hsl(12, 90%, 58%);
+}*/
 
 .all-content {
    margin: 0 auto;
    width: 90%;
-   line-height: 1.3rem;
-   letter-spacing: 1.5px;
+   line-height: 1.5rem;
+   letter-spacing: 1px;;
+   word-spacing: -1px;
 }
 
 h2 {
    text-align: center;
    padding: 1.5rem;
-   max-width: 500px;
    color: rgb(255, 82, 93) ;
 }
+.head-top{
+   font-family: 'Tangerine', serif;
+   text-shadow: 4px 4px 4px #aaa;
+   font-size: 48px;
+   width: 100%;
+   color: cornsilk;
+   text-align: left;
+   padding: 1.5rem;
+   background-color: rgb(92, 94, 112);
+   /*background-color: hsl(12, 90%, 58%);*/
+}
 
-p {
+p,
+h3 {
+   
    margin-bottom: 1rem;
+   max-width: 500px;
 }
 
 .box {
+   cursor: pointer;
    color: #000;
    max-width: 500px;
    font-size: 1.2rem;
@@ -46,7 +73,7 @@ p {
    text-align: center;
    justify-content: center;
    border: 1px solid #000;
-   background-color: hsl(227, 12%, 61%);
+   /*background-color: hsl(227, 12%, 61%);*/
    margin-top: 2rem;
 }
 
@@ -58,7 +85,7 @@ p {
 .flex {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: start;
    align-items: center;
 }
 
@@ -67,7 +94,6 @@ p {
    max-width: 500px;
    border-radius: 5px;
    border: 1px solid gray;
-   outline: none;
    height: 2.5rem;
    padding-left: 5px;
    margin-bottom: 1rem;
@@ -93,10 +119,11 @@ p {
 }
 
 .spinner {
+   margin-top: 1rem;
    margin-right: 0.5rem;
-   width: 7rem;
-   height: 7rem;
-   fill: #db2777;
+   width: 6rem;
+   height: 6rem;
+   fill: #1ade44;
    color: rgb(229 231 235);
 }
 
@@ -121,5 +148,15 @@ p {
 @media screen and (min-width:700px) {
    .flex {
       flex-direction: row-reverse;
+   }
+   .img{
+      width: 25rem;
+   }
+   p,
+   h3{
+      text-align: center;
+   }
+   .head-top{
+      font-size: 60px;
    }
 }
