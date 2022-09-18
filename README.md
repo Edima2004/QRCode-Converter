@@ -5,5 +5,5 @@ Food Menu,
 Cocktail Menu,
 Website,
 Business. etc.
-Go on to http://qrcode-converter.netlify.app to see the site in action. Generate your own business Qr Code while you're at it and move with the current trend.
+Go on to https://qrcode-converter-01.netlify.app to see the site in action. Generate your own business Qr Code while you're at it and move with the current trend.
 
